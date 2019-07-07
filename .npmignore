@@ -1,2 +1,5 @@
 /node_modules
-/tests
+package-lock.json
+/nbproject
+/examples/testapp/node_modules
+/examples/testapp/package-lock.json
