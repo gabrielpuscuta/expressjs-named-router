@@ -1,0 +1,114 @@
+{
+    "info": {
+        "name": "MyAppName",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "exported_at": "2019-07-07T06:14:49.442Z"
+    },
+    "item": [
+        {
+            "name": "Dashboard",
+            "request": {
+                "description": "Application Dashboard",
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "name": "Content-Type",
+                        "value": "application/json",
+                        "type": "text"
+                    },
+                    {
+                        "key": "App-Access-Token",
+                        "value": "{{myAppName.app.token}}",
+                        "type": "text"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": null
+                },
+                "url": {
+                    "raw": "{{myAppName.env.host}}/",
+                    "host": [
+                        "{{myAppName.env.host}}"
+                    ],
+                    "path": [
+                        ""
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Account / View Account",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "name": "Content-Type",
+                        "value": "application/json",
+                        "type": "text"
+                    },
+                    {
+                        "key": "App-Access-Token",
+                        "value": "{{myAppName.app.token}}",
+                        "type": "text"
+                    },
+                    {
+                        "key": "User-Access-Token",
+                        "value": "{{myAppName.user.token}}",
+                        "type": "text"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": null
+                },
+                "url": {
+                    "raw": "{{myAppName.env.host}}/account",
+                    "host": [
+                        "{{myAppName.env.host}}"
+                    ],
+                    "path": [
+                        "account"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "User / Login",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "name": "Content-Type",
+                        "value": "application/json",
+                        "type": "text"
+                    },
+                    {
+                        "key": "App-Access-Token",
+                        "value": "{{myAppName.app.token}}",
+                        "type": "text"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": null
+                },
+                "url": {
+                    "raw": "{{myAppName.env.host}}/login",
+                    "host": [
+                        "{{myAppName.env.host}}"
+                    ],
+                    "path": [
+                        "login"
+                    ]
+                }
+            },
+            "response": []
+        }
+    ]
+}

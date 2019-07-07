@@ -1,0 +1,23 @@
+{
+  "name": "expressjs-named-router",
+  "version": "0.0.1",
+  "description": "Named router for Express.js with Postman export",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "path-to-regexp": "^3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gabrielpuscuta/expressjs-named-router.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "expressjs router",
+    "expressjs routes",
+    "expressjs named routes"
+  ],
+  "devDependencies": {
+    "ascii-table": "0.0.9"
+  }
+}
