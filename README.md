@@ -2,7 +2,7 @@
 
 Named router for [Express.js](https://www.npmjs.com/package/express) with support for Postman exports.
 
-You can find a full example here: [example] (https://github.com/gabrielpuscuta/expressjs-named-router/tree/master/examples/testapp)
+You can find a full example here: [example](https://github.com/gabrielpuscuta/expressjs-named-router/tree/master/examples/testapp)
 
 ## Installing
 
@@ -243,6 +243,7 @@ console.log(router.collections.routes());
 ```
 
 Output:
+```text
 .-------------------------------------------------------------------------------------------------------------------------------------------.
 |                                                                  ROUTES                                                                   |
 |-------------------------------------------------------------------------------------------------------------------------------------------|
@@ -252,6 +253,7 @@ Output:
 | GET    | /account | app.authorization,user.authorization | user.account.view | Account / View Account | /account/account.view.js | true   |
 | GET    | /login   | app.authorization,test.middleware    | user.login        | User / Login           | /login.js                | true   |
 '-------------------------------------------------------------------------------------------------------------------------------------------'
+```
 
 ## Log middlewares (used in development)
 
@@ -260,6 +262,7 @@ console.log(router.collections.routes());
 ```
 
 Output:
+```text
 .----------------------------------------------------------------------------------.
 |                                   MIDDLEWARES                                    |
 |----------------------------------------------------------------------------------|
@@ -269,7 +272,7 @@ Output:
 | user.authorization | User Authorization        | /user.authorization.js | false  |
 | test.middleware    | Some description          | {ROUTES}/login.js      | true   |
 '----------------------------------------------------------------------------------'
-
+```
 
 ## Export to Postman
 
